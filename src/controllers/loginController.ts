@@ -7,7 +7,7 @@ const loginController = async (req: Request, res: Response) => {
 
   try {
     const token = await login(username, password);
-    res.json({ token });
+    res.status(200).json({ token });
   } catch (error) {
     if (error instanceof UserError) {
       switch (error.errorType) {
