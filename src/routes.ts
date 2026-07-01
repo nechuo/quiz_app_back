@@ -1,6 +1,6 @@
 import express from "express";
-import signUpController from "./controllers/signUpController";
-import loginController from "./controllers/loginController";
+import loginController from "./controllers/loginController.ts";
+import signUpController from "./controllers/signUpController.ts";
 
 const app = express();
 app.use(express.json());

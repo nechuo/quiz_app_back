@@ -1,5 +1,5 @@
-import sql from "../config/db";
-import UserError from "../errors/UserError";
+import sql from "../config/db.ts";
+import UserError from "../errors/UserError.ts";
 
 export const createUser = async (
   username: string,
